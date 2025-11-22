@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	  <title>Login</title>
+	  <link rel = "stylesheet" href= "../style.css">
+	  <script src= "../script.js" defer></script>
+	 </head>
+		<body>
+			<header id="site-header">
+				<a class="logo" href="index.html">
+				   <img src="../Assets/B_Logo.jpg" alt="logo">
+           			   <div>
+					<strong>Stitch By T</strong>
+				   </div>
+				</a>
+			</header>
+
+				<div class="container">
+					<h2>Login</h2>
+					<form id="loginForm" onsubmit="event.preventDefault(); loginUser();">
+						<label>Username:
+							<input type="text" id="login_username" required>
+						</label>
+						<label>Password:
+							<input type="password" id="login_password" required>
+						</label>
+					   <div style="margin-top:8px;">
+						<button type="submit" class="btn">Login</button>
+						<a href="register.html" class="btn secondary" style="display:inline-block; text-decoration:none; padding:8px 12px;">Register</a>
+					  </div>
+					</form>
+				</div>
+		</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	  <title>Checkout</title>
+	  <link rel = "stylesheet" href= "../style.css">
+	  <script src= "../script.js" defer></script>
+	 </head>
+		<body>
+			<header id="site-header">
+				<a class="logo" href="index.html">
+				   <img src="../Assets/B_Logo.jpg"  alt="logo">
+           			   <div>
+					<strong>Stitch By T</strong>
+				   </div>
+				</a>
+			
+				<nav class="main-nav" style="margin-left:auto;">
+					<a href="index.html">Home</a>
+					<a href="products.html">Products</a>
+					<a href="cart.html">Cart (<span id="cartCount">0</span>) </a>
+					<a href="about.html">About</a>
+					<a href="login.html">Login</a>
+				</nav>
+			    </header>
+
+			    	  <div class ="container">
+					<h2> Checkout</h2>
+					<div id="checkoutSummary"></div>
+
+					<form id="checkoutForm">
+						<label>Full Name:
+							<input type="text" id="shipName" required>
+						</label>
+						<label>Shipping Address:
+							<input type="text" id="shipAddress" required>
+						</label>																					
+						<label>Payment Amount:
+							<input type="number" id="payAmount" required>
+						</label>
+
+					<div style="margin-top:10px;">
+						<button type="button" class="btn" onclick="confirmCheckout()">Confirm</button>
+						<button type="button" class="btn secondary" onclick="cancelCheckout()">Cancel</button>
+						<button type="button" class="btn secondary" onclick="clearCart()">Clear All</button>
+					</form>
+
+					<div id="checkoutResult"></div>
+  				</div>
+		</body>
+</html>

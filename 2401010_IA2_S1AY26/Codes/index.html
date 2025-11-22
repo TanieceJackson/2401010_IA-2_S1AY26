@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	  <title>Handmade Tote Bags - Home</title>
+	  <link rel = "stylesheet" href= "../style.css">
+	  <script src= "../script.js" defer></script>
+	 </head>
+		<body>
+			<header id="site-header">
+				<a class="logo" href="index.html">
+				   <img src="../Assets/B_Logo.jpg" alt="Shop Logo">
+           			   <div>
+					<strong>Stitch By T</strong><br>
+					<small class = "text-muted">Handmade Tote Bags</small>
+				   </div>
+				</a>
+			
+				<nav class="main-nav" style="margin-left:auto;">
+					<a href="index.html" class="active">Home</a>
+					<a href="products.html">Products</a>
+					<a href="cart.html">Cart</a>
+					<a href="about.html">About</a>
+					<a href="login.html">Login</a>
+				</nav>
+			    </header>
+
+			    	  <div class="container">
+					<div class ="site-grid">
+						<aside class="sidebar">
+							<h4>Shop Filters</h4>
+							<p class="text-muted"></p>
+							<button class="btn secondary" onclick="renderProducts('productList')">Show All</button>
+						</aside>
+
+						<section>
+							<h2>Featured Tote Bags</h2>
+							<div id="productList" class="products"></div>
+						</section>
+					  </div>
+				   </div>
+		</body>
+</html>
